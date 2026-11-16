@@ -9,9 +9,9 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   darkMode: ["selector", '[data-theme="dark"]'],
   content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./lib/**/*.{ts,tsx}",
+    "./src/app/**/*.{ts,tsx}",
+    "./src/components/**/*.{ts,tsx}",
+    "./src/lib/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
@@ -94,7 +94,7 @@ const config: Config = {
         body: ["var(--text-body-size)", { lineHeight: "var(--text-body-line)" }],
         small: ["var(--text-small-size)", { lineHeight: "var(--text-small-line)" }],
         caption: ["var(--text-caption-size)", { lineHeight: "var(--text-caption-line)" }],
-        amount: ["var(--text-amount-size)", { lineHeight: "var(--text-amount-line)", fontWeight: "700", fontVariantNumeric: "tabular-nums", letterSpacing: "-0.01em" }],
+        amount: ["var(--text-amount-size)", { lineHeight: "var(--text-amount-line)", fontWeight: "700", letterSpacing: "-0.01em" }],
       },
       fontWeight: {
         regular: "var(--font-regular)",
